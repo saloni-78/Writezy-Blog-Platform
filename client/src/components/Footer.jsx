@@ -12,7 +12,7 @@ const Footer = () => {
             <p className='max-w-[410px] mt-[-50px] dark:text-white'>Built for storytellers who believe in the power of words to inspire, connect, and transform everyday thoughts into something meaningful.</p>
         </div>
 
-        <div className='flex  justify-between w-full md:w-[45%] gap-5'>
+        <div className='grid grid-cols-3 w-full md:w-[45%] gap-5'>
             {footer_data.map((section, index)=> (
                 <div key={index}>
                     <h3 className='font-semibold dark:text-white text-base text-gray-900  md:mb-5 mb-2'>{section.title}</h3>
