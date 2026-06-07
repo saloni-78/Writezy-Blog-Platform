@@ -45,3 +45,26 @@
 body {
     @apply bg-white dark:bg-black text-gray-900 dark:text-white transition-colors duration-300;
 }
+
+.dark .ql-toolbar {
+  background-color: #1f2937;
+  border-color: #4b5563 !important;
+}
+
+.dark .ql-container {
+  background-color: #1f2937;
+  border-color: #4b5563 !important;
+  color: white;
+}
+
+.dark .ql-stroke {
+  stroke: #9ca3af !important;
+}
+
+.dark .ql-fill {
+  fill: #9ca3af !important;
+}
+
+.dark .ql-picker {
+  color: #9ca3af !important;
+}

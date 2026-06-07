@@ -81,17 +81,17 @@ const AddBlog = () => {
     },[])
 
   return (
-    <form onSubmit={onSubmitHandler} className='flex-1 bg-blue-50/50 text-gray-600 h-full overflow-scroll'>
-      <div className='bg-white w-full max-w-3xl p-4 md:p-10 sm:m-10 shadow rounded'>
+    <form onSubmit={onSubmitHandler} className='flex-1 bg-blue-50/50 text-gray-900  dark:bg-gray-900 dark:text-gray-300 h-full overflow-scroll'>
+      <div className='bg-white dark:bg-gray-800 dark:border dark:border-gray-700 w-full max-w-3xl p-4 md:p-10 sm:m-10 shadow rounded dark:shadow-none'>
 
         <p>Upload thumbnail</p>
         <label htmlFor="image">
-            <img src={!image ? assets.upload_area : URL.createObjectURL(image)} alt="" className='mt-2 h-16 rounded cursor-pointer'/>
+            <img src={!image ? assets.upload_area : URL.createObjectURL(image)} alt="" className='mt-2 h-16 rounded cursor-pointer '/>
             <input onChange={(e)=> setImage(e.target.files[0])} type="file" id='image' hidden required/>
         </label>
 
-        <p className='mt-4'>Blog title</p>
-        <input type="text" placeholder='Type here' required className='w-full max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded' onChange={e => setTitle(e.target.value)} value={title}/>
+        <p ark:bg-gray-800 className='mt-4'>Blog title</p>
+        <input type="text" ark:bg-gray-800 dark:border-gray-600  placeholder='Type here' required className='w-full max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded' onChange={e => setTitle(e.target.value)} value={title}/>
 
         <p className='mt-4'>Sub title</p>
         <input type="text" placeholder='Type here' required className='w-full max-w-lg mt-2 p-2 border border-gray-300 outline-none rounded' onChange={e => setSubTitle(e.target.value)} value={subTitle}/>

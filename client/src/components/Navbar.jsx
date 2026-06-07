@@ -8,14 +8,11 @@ const Navbar = () => {
     const { isDark, toggleTheme } = useTheme();
 
     return (
-        <div className='flex justify-between h-30 items-center py-5 mx-8 sm:mx-20  xl:mx-32'>
+        <div className='flex justify-between h-30 items-center py-5 mx-8 sm:mx-10  xl:mx-32'>
            
-            <img
-                onClick={() => navigate('/')}
-                src={assets.logo}
-                alt="logo"
-                className='cursor-pointer w-40 sm:w-56 xl:w-64 dark:invert'
-            />
+                <img onClick={() => navigate('/')}src={assets.logo}alt="logo"
+                     className='cursor-pointer w-40 sm:w-56 xl:w-64  dark:invert hue-rotate-180'
+                   />
 
             <div className='flex items-center gap-4'>
                

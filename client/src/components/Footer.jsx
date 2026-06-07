@@ -9,13 +9,13 @@ const Footer = () => {
 
         <div>
          <img src={assets.logo} alt="logo" className='w-32  sm:w-44 mt-[-60px] ml-[-23px] dark:invert'/>                                                                                                                                                                                        
-            <p className='max-w-[410px] mt-[-50px]'>Built for storytellers who believe in the power of words to inspire, connect, and transform everyday thoughts into something meaningful.</p>
+            <p className='max-w-[410px] mt-[-50px] dark:text-white'>Built for storytellers who believe in the power of words to inspire, connect, and transform everyday thoughts into something meaningful.</p>
         </div>
 
         <div className='flex  justify-between w-full md:w-[45%] gap-5'>
             {footer_data.map((section, index)=> (
                 <div key={index}>
-                    <h3 className='font-semibold dark:invert text-base text-gray-900 md:mb-5 mb-2'>{section.title}</h3>
+                    <h3 className='font-semibold dark:text-white text-base text-gray-900  md:mb-5 mb-2'>{section.title}</h3>
                     <ul className='text-sm space-y-1'>
                         {section.links.map((link, i)=> (
                             <li key={i}>
@@ -33,8 +33,8 @@ const Footer = () => {
 
 
       </div>
-      <p className='py-4 text-center text-sm md:text-base text-gray-500/80'>Copyright 2026 © Writezy - All Right Reserved.</p>
-      <p className='py-3 text-center text-sm text-gray-400 flex items-center justify-center gap-1.5 tracking-wide'>
+      <p className='py-4 text-center text-sm md:text-base text-gray-500/80 dark:text-white'>Copyright 2026 © Writezy - All Right Reserved.</p>
+      <p className='py-3 text-center text-sm text-gray-400 flex items-center justify-center gap-1.5 tracking-wide dark:text-white'>
   Made with
   <span className='inline-block animate-pulse text-red-400 text-base'>♥</span>
   by the Writezy Team
